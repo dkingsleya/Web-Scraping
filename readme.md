@@ -1,7 +1,8 @@
 # py-web-scrape
 Web Scraping Trading View to Get First 150 Coins Data
+With Tkinter GUI
 
-# Libraries
+# Main Libraries
 Beautiful Soup 4
   pip install beautifulsoup4
 
