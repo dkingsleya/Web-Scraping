@@ -11,8 +11,6 @@ root.iconbitmap('bitcoin_icon.ico')
 root.minsize(width=900, height=300)
 root.resizable(width=0, height=0)
 
-html_frame = HtmlFrame(root, horizontal_scrollbar=False)
-
 #Iterate through Rows
 def populate():
     # Functions
