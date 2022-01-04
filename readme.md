@@ -10,3 +10,6 @@ Requests
 
 LXML
   pip install lxml
+
+Tkinter
+  pip install tkinter
