@@ -1,5 +1,4 @@
 from bs4 import BeautifulSoup
-from tkinterhtml import HtmlFrame
 from tkinter import Tk, LabelFrame, Button, Grid, ttk, Label, PhotoImage
 import requests
 import shutil
