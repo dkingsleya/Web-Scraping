@@ -1,1 +1,1 @@
-ground=f"{color}
+print(crypto_name + color)

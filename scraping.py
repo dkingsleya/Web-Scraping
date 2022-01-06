@@ -42,6 +42,9 @@ def populate():
     #Take all Rows from tbody
     cryptos = main.find_all('tr', class_='tv-data-table__row tv-data-table__stroke tv-screener-table__result-row', limit=50) #limiting to 50 rows
 
+    style = ttk.Style(root)
+    # set ttk theme to "clam" which support the fieldbackground option
+    style.theme_use("clam")
     #Iterate through Rows
     for crypto in cryptos:
         #Find name from a element
@@ -80,6 +83,8 @@ def populate():
 
         # crypto_image_retrieved = PhotoImage(file=f'image{crypto_name}.svg')
         table.insert(parent='', index='end', values=(crypto_name, crypto_market_cap, crypto_f_diluted_market_cap, crypto_l_price, crypto_avail_coins, crypto_total_coins, crypto_traded_vol), tags=crypto_name)
+        
+        print(crypto_name + f' color')
         table.tag_configure(crypto_name, background=f"{color}")
     
     fear_greed_index_label = Label(frame, text=f'Fear Greed Index: {fear_greed_index}', font=("Calibri", 12))
