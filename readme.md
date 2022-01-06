@@ -3,16 +3,16 @@ Web Scraping Trading View to Get First 150 Coins Data
 With Tkinter GUI
 
 ## Main Libraries
-######Beautiful Soup 4
+###### Beautiful Soup 4
 > pip install beautifulsoup4
 
-######Requests
+###### Requests
 > pip install requests
 
-######LXML
+###### LXML
 > pip install lxml
 
-######Tkinter
+###### Tkinter
 > pip install tkinter
 
 ## Pyinstaller Commands
