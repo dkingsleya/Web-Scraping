@@ -1,1 +1,1 @@
-greed_fear
+ground=f"{color}
