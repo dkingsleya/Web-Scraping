@@ -6,10 +6,19 @@ import random
 import json
 import urllib.request
 import gzip
+import os
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 root = Tk()
 root.title('Crypto Price Check')
-root.iconbitmap('bitcoin_icon.ico')
+root.iconbitmap(resource_path('bitcoin_icon.ico'))
 root.minsize(width=950, height=300)
 root.resizable(width=0, height=0)
 

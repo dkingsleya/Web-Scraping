@@ -14,3 +14,8 @@ LXML
 
 Tkinter
   pip install tkinter
+
+# Pyinstaller Commands
+pyinstaller --onefile -w 'scraping.py'
+
+pyinstaller scraping.spec
